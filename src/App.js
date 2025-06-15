@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Container, Heading } from "@chakra-ui/react";
 import BlogList from "./pages/blogList";
-import BlogForm from "./components/blogForm"
 
 
 

@@ -68,6 +68,7 @@ const BlogList = () => {
 
   useEffect(() => {
     fetchBlogs();
+    // eslint-disable-next-line 
   }, []);
 
   const addBlog = async (newBlog) => {
