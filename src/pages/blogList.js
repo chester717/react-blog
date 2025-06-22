@@ -28,6 +28,7 @@ import { AdvancedImage } from "@cloudinary/react";
 import { auto } from "@cloudinary/url-gen/actions/resize";
 import { autoGravity } from "@cloudinary/url-gen/qualifiers/gravity";
 import BlogForm from "../components/blogForm";
+import { Link as RouterLink } from "react-router-dom";
 
 const cld = new Cloudinary({
   cloud: {
@@ -123,6 +124,8 @@ const BlogList = () => {
         <SimpleGrid columns={3} spacing={6}>
           {blogs.map((blog) => (
             <Box
+              as={RouterLink}
+              to={`/blog/${blog.id}`}
               key={blog.id}
               p={6}
               bg="white"
